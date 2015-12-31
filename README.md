@@ -1,4 +1,7 @@
-#B52
+#BASIC-MCU-GAME
+
+__This is the blog and repo for my entry in the [Retrochallenge Competition](http://www.wickensonline.co.uk/retrochallenge-2012sc/). I will design, build and write some game for an old MCU with a built-in BASIC interpreter.__
+
 
 ##January 1 - 2016
 ### Finding some contemporary parts
