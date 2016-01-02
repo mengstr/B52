@@ -13,21 +13,21 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 ### Hacking into a Dallas NVRAM
 Since my EPROM burner is so old it connect via a parallel port I needed to find another solution for that.  I found an old but never used Dallas DS1235 32Kx8 NVRAM module that I got in a goodie bag  at some electronics seminar I attended way back in the past.
 
-It's dated 1987 and looking at the datasheet the internal battery should last atleast 10 years. Condsidering it's almost 20 years past the expiry date I wanted to make sure that the batteries wasn't dead.
+It's dated 1987 and looking at the datasheet the internal battery should last at least 10 years. Considering it's almost 20 years past the expiry date I wanted to make sure that the batteries wasn't dead.
 
 The module consists of a SRAM with a DS1210 Nonvolatile Controller Chip and two lithium batteries potted in epoxy.
 
-Luckliy the top of the DS1210 was exposed at the bottom so it was rather easy to just use a hot soldering iron to scrape off the epoxy layer by layer to get down to the legs of the DS1210 so I could measure the voltages of VBAT1 ad VBAT2.
+Luckily the top of the DS1210 was exposed at the bottom so it was rather easy to just use a hot soldering iron to scrape off the epoxy layer by layer to get down to the legs of the DS1210 so I could measure the voltages of VBAT1 and VBAT2.
 
 <img src=https://github.com/SmallRoomLabs/B52/raw/master/images/DS1235.jpg width=800 />
 
-It was dead...  VBAT1 vad just a few millivolts and VBAT2 had fared batter and was at 250mV.
+It was dead...  VBAT1 had just a few millivolts and VBAT2 had fared batter and was at 250mV.
 
 I will dig out some more of the epoxy so I can cut one of the battery leads and attach an external battery to keep the module alive without VCC.  
 
 I'm not sure if I can use a single 3 volt coin cell battery and expect the SRAM to be within data retention limits since the DS1210 have a voltage drop of up to 0.3 volts.  But the maximum voltage of VBAT1/2 on the DS1210 is 4.0 volts so I can't just series two coin cells.
 
-So I have three choises. Either run it on a single standard 3v cell, get a 3.6 volt Li-ion coin cell or series two 3 volt cells and then hook it up with some diodes to drop off the extra voltage. But at nanoamps the Vf of a diode is not much so I'd need a lot of them. Maybe I can use a LED instead....
+So I have three choices. Either run it on a single standard 3v cell, get a 3.6 volt Li-ion coin cell or series two 3 volt cells and then hook it up with some diodes to drop off the extra voltage. But at nanoamps the Vf of a diode is not much so I'd need a lot of them. Maybe I can use a LED instead....
  
 
 ##January 1 - 2016
