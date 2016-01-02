@@ -7,13 +7,26 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 1. [Intro](#Intro)
 2. [Finding some contemporary parts](#Finding-some-contemporary-parts)
 3. [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)
+4. [Bare Z8671 is alive](#Bare-Z8671-is-alive)
 
 
 ##January 2 - 2016
+
+### Bare Z8671 is alive
+I didn't know if the processor was still working after all time time on a disintegrating piece of antistatic foam so I wired up the simplest possible test on a solderless breadboard.
+
+Just the CPU plus a 100nF cap and the crystal with its 20pF load caps is required. And three 1K resistors that pulls up the lower three bits of data bus to force the baudrate to be set to 300 baud.
+
+It's hooked up to a Adafruit FTDI adapter which also supplies the 5 volts power for it.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/Z8671-Test1.jpg width=800 />
+
+Seems like it works rather well as can be seen on the terminal above. It complains about a syntax error at line 24950, but I guess that is because the BASIC firmware gets confused when databus is flowing while it probing the memory ranges. At least I hope it is so or else the BASIC ROM has succumbed to bitrot over the years. :-(
+
 ### Hacking into a Dallas NVRAM
 Since my EPROM burner is so old it connect via a parallel port I needed to find another solution for that.  I found an old but never used Dallas DS1235 32Kx8 NVRAM module that I got in a goodie bag  at some electronics seminar I attended way back in the past.
 
-It's dated 1987 and looking at the datasheet the internal battery should last at least 10 years. Considering it's almost 20 years past the expiry date I wanted to make sure that the batteries wasn't dead.
+It's dated 1988 and looking at the data sheet the internal battery should last at least 10 years. Considering it's almost 20 years past the expiry date I wanted to make sure that the batteries wasn't dead.
 
 The module consists of a SRAM with a DS1210 Nonvolatile Controller Chip and two lithium batteries potted in epoxy.
 
@@ -27,7 +40,7 @@ I will dig out some more of the epoxy so I can cut one of the battery leads and 
 
 I'm not sure if I can use a single 3 volt coin cell battery and expect the SRAM to be within data retention limits since the DS1210 have a voltage drop of up to 0.3 volts.  But the maximum voltage of VBAT1/2 on the DS1210 is 4.0 volts so I can't just series two coin cells.
 
-So I have three choices. Either run it on a single standard 3v cell, get a 3.6 volt Li-ion coin cell or series two 3 volt cells and then hook it up with some diodes to drop off the extra voltage. But at nanoamps the Vf of a diode is not much so I'd need a lot of them. Maybe I can use a LED instead....
+So I have three choices. Either run it on a single standard 3v cell, get a 3.6 volt Li-ion coin cell or series two 3 volt cells and then hook it up with some diodes to drop off the extra voltage. But at nano amps the Vf of a diode is not much so I'd need a lot of them. Maybe I can use a LED instead....
  
 
 ##January 1 - 2016
