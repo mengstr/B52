@@ -2,8 +2,21 @@
 
 __This is the blog and repo for my entry in the [Retrochallenge Competition](http://www.wickensonline.co.uk/retrochallenge-2012sc/). I will design, build and write some game for an old MCU with a built-in BASIC interpreter.__
 
+| Left align | Right align | Center align |
+|:-----------|------------:|:------------:|
+| [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)       |        [Finding some contemporary parts](#Finding-some-contemporary-parts) |     [Intro](#Intro)      
+| column     |      column |     [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)    
+| will       |        will |     will     
+| be         |          be |      be      
+| left       |       right |    center    
+| aligned    |     aligned |   aligned
+
+1. [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)
+2. [Finding some contemporary parts](#Finding-some-contemporary-parts)
+3. [Intro](#Intro)  
+
 ##January 2 - 2016
-### Hacking a Dallas NVRAM
+### Hacking into a Dallas NVRAM
 Since my EPROM burner is so old it connect via a parallel port I needed to find another solution for that.  I found an old but never used Dallas DS1235 32Kx8 NVRAM module that I got in a goodie bag  at some electronics seminar I attended way back in the past.
 
 It's dated 1987 and looking at the datasheet the internal battery should last atleast 10 years. Condsidering it's almost 20 years past the expiry date I wanted to make sure that the batteries wasn't dead.
