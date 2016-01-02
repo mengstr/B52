@@ -1,19 +1,13 @@
 #BASIC-MCU-GAME
 
-__This is the blog and repo for my entry in the [Retrochallenge Competition](http://www.wickensonline.co.uk/retrochallenge-2012sc/). I will design, build and write some game for an old MCU with a built-in BASIC interpreter.__
+__This is the blog and repo for my entry in the [Retrochallenge Competition](http://www.wickensonline.co.uk/retrochallenge-2012sc/). I will design, build and write a game for an old MCU with a built-in BASIC interpreter.__
 
-| Left align | Right align | Center align |
-|:-----------|------------:|:------------:|
-| [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)       |        [Finding some contemporary parts](#Finding-some-contemporary-parts) |     [Intro](#Intro)      
-| column     |      column |     [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)    
-| will       |        will |     will     
-| be         |          be |      be      
-| left       |       right |    center    
-| aligned    |     aligned |   aligned
+##Index
 
-1. [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)
+1. [Intro](#Intro)
 2. [Finding some contemporary parts](#Finding-some-contemporary-parts)
-3. [Intro](#Intro)  
+3. [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)
+
 
 ##January 2 - 2016
 ### Hacking into a Dallas NVRAM
