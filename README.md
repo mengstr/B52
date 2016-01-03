@@ -13,7 +13,7 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 ##January 2 - 2016
 
 ### Bare Z8671 is alive
-I didn't know if the processor was still working after all time time on a disintegrating piece of antistatic foam so I wired up the simplest possible test on a solderless breadboard.
+I didn't know if the processor was still working after all this time on a disintegrating piece of antistatic foam so I wired up the simplest possible test circuit on a solderless breadboard.
 
 Just the CPU plus a 100nF cap and the crystal with its 20pF load caps is required. And three 1K resistors that pulls up the lower three bits of data bus to force the baudrate to be set to 300 baud.
 
