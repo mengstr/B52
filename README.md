@@ -21,29 +21,31 @@ I did't really care about the exact order of the bits when wiring them up, I jus
 This is how the layout and connections ended up:
 
 
-`  Z8671                                                    HEADER
----------                                                 --------
-VCC   P36                                                         
-X2    P31                                                    RW
-X1    P27                                                    /E
-TX    P26                                                    a7
-RX    P25         6264          DS1235                       a6    
-/RES  P24        -------       ---------                     a5    
-R/W   P23        NC  VCC        A   VCC                      a4    
-/DS   P22        A   /WE        A   /WE                      a3    
-/AS   P21        A   CS2        A     A         LS373        a2    
-P35   P20        A     A        A     A        -------       a1    
-GND   P33        A    a6        A    a6        /OE VCC       a0    
-P32   P34        a4   a7        a4   a7        a7   a6       d7    
-A8     d7        a5  /OE        a5  /OE        d7   d6       d6    
-A9     d6        a3   a2        a3   a2        d5   d4       d5    
-A10    d5        a0 /CS1        a0  /CE        a5   a4       d4    
-A11    d4        a1   d7        a1   d7        a3   a2       d3    
-A12    d3        d5   d6        d5   d6        d3   d2       d2    
-A13    d2        d3   d4        d3   d4        d1   d0       d1    
-A14    d1        d1   d2        d1   d2        a1   a0       d0    
-A15    d0        GND  d0        GND  d0        GND  LE      GND
-`
+    Z8671                                                      HEADER
+    ---------                                                 --------
+    VCC   P36                                                         
+    X2    P31                                                    RW
+    X1    P27                                                    /E
+    TX    P26                                                    a7
+    RX    P25         6264          DS1235                       a6    
+    /RES  P24        -------       ---------                     a5    
+    R/W   P23        NC  VCC        A   VCC                      a4    
+    /DS   P22        A   /WE        A   /WE                      a3    
+    /AS   P21        A   CS2        A     A         LS373        a2    
+    P35   P20        A     A        A     A        -------       a1    
+    GND   P33        A    a6        A    a6        /OE VCC       a0    
+    P32   P34        a4   a7        a4   a7        a7   a6       d7    
+    A8     d7        a5  /OE        a5  /OE        d7   d6       d6    
+    A9     d6        a3   a2        a3   a2        d5   d4       d5    
+    A10    d5        a0 /CS1        a0  /CE        a5   a4       d4    
+    A11    d4        a1   d7        a1   d7        a3   a2       d3    
+    A12    d3        d5   d6        d5   d6        d3   d2       d2    
+    A13    d2        d3   d4        d3   d4        d1   d0       d1    
+    A14    d1        d1   d2        d1   d2        a1   a0       d0    
+    A15    d0        GND  d0        GND  d0        GND  LE      GND
+    
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/PCB1.jpg width=800 />
+
 
 ##January 2 - 2016
 
