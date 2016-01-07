@@ -9,9 +9,15 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 3. [Hacking into a Dallas NVRAM](#Hacking-into-a-Dallas-NVRAM)
 4. [Bare Z8671 is alive](#Bare-Z8671-is-alive)
 5. [Soldering perfboard 1](#Soldering-perfboard-1)
+6. [The game](#The-game)
 
 
-##January 6 - 2016 
+##January 7
+### The game
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/EarthLander-Console1.jpg width=800 />
+
+##January 6  
 ### Soldering perfboard 1
 
 Today I took a perfboard and soldered up power and the data/address busses of the MCU, SRAM, NVRAM and the address bus latch.
@@ -47,7 +53,7 @@ This is how the layout and connections ended up:
 <img src=https://github.com/SmallRoomLabs/B52/raw/master/images/PCB1.jpg width=800 />
 
 
-##January 2 - 2016
+##January 2 
 
 ### Bare Z8671 is alive
 I didn't know if the processor was still working after all this time on a disintegrating piece of antistatic foam so I wired up the simplest possible test circuit on a solderless breadboard.
@@ -80,7 +86,7 @@ I'm not sure if I can use a single 3 volt coin cell battery and expect the SRAM 
 So I have three choices. Either run it on a single standard 3v cell, get a 3.6 volt Li-ion coin cell or series two 3 volt cells and then hook it up with some diodes to drop off the extra voltage. But at nano amps the Vf of a diode is not much so I'd need a lot of them. Maybe I can use a LED instead....
  
 
-##January 1 - 2016
+##January 1 
 ### Finding some contemporary parts
 The Z8671 is the oldest of the two MCUs and seems rather easy to use as well. The BASIC interpreter is fit into only 2K ROM instead of the 4K that the P8052 is using so it will be a lot more limited in functionality, but that will only add to the authenticity of the time period. ;-)
 
@@ -96,7 +102,7 @@ No early 80'es computer can be without cheesy sound effects using something like
 <img src=https://github.com/SmallRoomLabs/B52/raw/master/images/Z8671-parts.jpg width=400 />
 
 
-##December 30 - 2015
+##December 30 
 ###Intro
 While rummaging around in my old junkboxes I found two different ancient MCUs both with a built-in BASIC interpreters.
 
