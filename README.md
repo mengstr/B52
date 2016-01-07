@@ -15,7 +15,17 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 ##January 7
 ### The game
 
-<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/EarthLander-Console1.jpg width=800 />
+I've been thinking for a bit of some games that could be suitable for a rather limited system like this.  Any video graphics is out of the questions except for a something like a matrix of 16x32 LEDS as a playing field for a Pong- or Breakout-like game.  Hooking up a VT100 terminal to it I could make an 80's text adventure game or something like "Hunt the Wumpus" or, as another contestant already does, port the StarTrek game to it.
+
+But I wanted to have this a self-contained unit with no PC or terminal required, so I came up with a variant of the Lunar Lander game but without the graphics part. Normally on lunar lander the current data of the ship like Descent Rate and Remaining Fuel is shown in numbers on the screen together with the graphics of the ship and the lunar surface.  I use four-digit 7-segment displays for all the flight data required to safely navigate and land the ship.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/EarthLander-Console1.jpg width=500 />
+
+I plan to take a A4-sheet sized piece of acrylics and bend the bottom 1/4-part of it so it ends up like a console where I can have the displays on the top part and the game controls on the lower (horizontal) part. Something like this...
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/EarthLander-ConsoleExample.jpg />
+
+Having analog gauges like on this image would be even cooler!  Maybe for revision two of the game, but for the time being I'll stick to digital readouts.
 
 ##January 6  
 ### Soldering perfboard 1
