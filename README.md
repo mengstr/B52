@@ -23,7 +23,7 @@ But I wanted to have this a self-contained unit with no PC or terminal required,
 
 I plan to take a A4-sheet sized piece of acrylics and bend the bottom 1/4-part of it so it ends up like a console where I can have the displays on the top part and the game controls on the lower (horizontal) part. Something like this...
 
-<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/EarthLander-ConsoleExample.jpg />
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/ConsoleExample.jpg />
 
 Having analog gauges like on this image would be even cooler!  Maybe for revision two of the game, but for the time being I'll stick to digital readouts.
 
