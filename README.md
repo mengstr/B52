@@ -10,6 +10,40 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 4. [Bare Z8671 is alive](#Bare-Z8671-is-alive)
 5. [Soldering perfboard 1](#Soldering-perfboard-1)
 6. [The game](#The-game)
+7. [Game test](#Game-test-in-PBASIC)
+8. [Soldering displays](#Soldering displays)
+9. [Bending acrylic](#Bending-acrylic)
+
+##January 28
+### Bending acrylic
+I need a nice retro looking console to mount the displays on. So I took a A4-sized piece of acrylics and bent it using a small blowtorch.  It was the first time I've evert tried bending acrylics and it was rather easy.  I think it turned out quite well if I'm allowed to say that myself. ^_^
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/BentAcrylics.jpg width=500 />
+
+
+### Soldering displays
+I spent feeling the deadline rapidly approaching I spend a couple of hours soldering up all the required displays. I need 10 displays each made out of a pair of 2-digit displays that I found in a bag I bought from Electronic Goldmine about 15 years ago.
+
+I epoxied the displays together in pairs and then sat them up on my desk on a long line so I could easily wire them up with 0.2mm insulated wire point-to-point style.  The insulation on the wire is quite easily solderable using a soldering iron set to 400C instead of my usual 290C.  After the soldering I just cut the sites between the modules as required.
+
+The shift registers and the resistors was just tacked onto the displays in dead bug style. Really ugly but it got the job done.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/DisplaysBeingSoldered.jpg width=500 />
+
+The 4-digit modules are driven by a HC595 shift register with 82 ohm resistors connected to the cathodes. So each module have 4 Anodes, VCC/GND and DataIn/Clock/Latch/DataOut that needs to be hooked to to the other modules.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/SolderedDisplays.jpg width=500 />
+
+The GND wire is a bit thicker that the rest of the wiring since it needs to carry quite a lot of current in total.
+
+
+##January 20
+### Game test in PBASIC
+I've been very busy with work and an upcoming overseas move so unfortunately the work on my #RetroChallenge entry has been mostly neglected.
+
+But for some basic (pun intended) testing of the game logic I hacked up a quick test in PC-BASIC. If is an excellent open source implementation of the classic GW-BASIC from back in the good old days. For more info and download of the PC-BASIC go to [robhagemans.github.io/pcbasic](https://robhagemans.github.io/pcbasic/)
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/GameInPcBASIC.png width=500 />
 
 
 ##January 7
