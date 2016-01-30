@@ -13,6 +13,35 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 7. [Game test](#Game-test-in-PBASIC)
 8. [Soldering displays](#Soldering displays)
 9. [Bending acrylic](#Bending-acrylic)
+10. [Console layout](#Console-layout)
+11. [Consoleworks](#Consoleworks)
+
+##January 30
+### Consoleworks
+I attached the transparency to the acrylics using spray glue.  It was a hard to fit it at the first try and it ended up slightly crooked, but not too bad. The glue did make the unpainted "windows" for the displays slightly cloudy but that have to do  for the time being. If I make another panel like this I need to come up with an easier solution.
+
+For the thruster control I needed a potentiometer with a lever mounted in 90-degree angle to the pot axis. I simply drilled a hole straight through it and attached a spare Dremel spindle to it. Problem solved.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/PotAxis90.jpg width=500 />
+
+The pot what then epoxied to a piece of scrap PCB that is securely held to the acrylic by two of the push buttons.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/ControlsBack.jpg width=500 />
+
+For the thruster handle I used a piece of a "touchscreen pen" that I glued to the end of the Dremel rod.  All in all I think it looks fully acceptable for something done without any proper equipment.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/ControlsFront.jpg width=500 />
+
+ 
+##January 29
+### Console layout
+I printed the layout of the panel onto transparent film and covered the areas for the displays with sticky tape on the backside of the film.  Then I spray painted the back with "chrome" paint.  It ended up more silver grey than a shiny chrome. It also "developed" my fingerprints that I got on the transparency so there are ugly dark tarnished areas on it. Not so nice, but I'll keep it anyways.
+
+The transparency also got slightly wrinkled after being laser printed, I hope that it will not be a problem when I glue it to the acrylic.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/BackAfterSpraying.jpg width=500 />
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/FrontAfterSpraying.jpg width=500 />
+
 
 ##January 28
 ### Bending acrylic
