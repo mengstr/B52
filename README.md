@@ -15,6 +15,36 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 9. [Bending acrylic](#Bending-acrylic)
 10. [Console layout](#Console-layout)
 11. [Consoleworks](#Consoleworks)
+12. [Console is done](#Console-is-done)
+13. [Finalised PCB](#Finalised-PCB)
+
+##January 31
+
+### Finalised PCB
+All parts of the PCB is wired up and all connections are buzzed out to test for shorts and bad connections.
+
+Going from left to right on the PCB there are a screw terminal for 5 volts and a power-on LED and above that the reset button and its support circuity (including a very colorful red/yellow 1980's-era capacitor).
+
+Then a standard FTDI-style pin header for TTL-level serial comms. The Z8671 supports using baud rates from 110 baud up to 19200.
+
+A 74LS138 for address decoding, followed by the Z8671 MCU itself and a 8 kilobyte SRAM and the DALLAS DS1235 Non-volatile SRAM with a internal backup battery. The battery is by long dead but I dug out the innards and was able to hook up wires for attaching an external battery to it - which currently is not mounted on the PCB.
+
+Finally the 74LS373 Address-latch that splits up the lower 8 address bits from the combined Adress/Data-bus the Z8671 is using as a pin-saving feature.  Without that feature 16 pins for address and 8 pins for data (=24 pins) would be required on the 40-pin chip. Now "only" 16 is used leaving more pins for I/O.
+
+The three resistors at the far end are for forcing the lower bits of the data bus to 010. This is used by the initialisation routines of the Z8671 to determine the desired baud rate. 010 gives 9600 baud. Actually this is an ugly hack since the Z8671 is really reading the address 0xFFFD to get the baud rate, and to properly handle that I'd need a lot of address decoding and also a three-state buffer. So this is easier - whenever an unused address is read the data buss will just be floating and these three resistors will gently pull the bits to the desired state.
+  
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/PCB2.jpg width=500 />
+
+
+### Console is done
+Attaching the displays to the console was not easy. My first plan was to just use a hot glue gun, but that turned out to be not so good since the "chrome" spray paint has a rather loose surface so the glue  is just ripping off the top layer of the paint as soon as some force is applied to it. And the blue didn't stick particularly well to the plastic of the displays either.
+
+So after hotsnotting them into place I used a liberal amount of silicon sealant all over the place.  I hope that if I'm careful enough when handling the panel the displays will stay there.
+
+This is what the front of the console looks like.
+
+<img src=https://github.com/SmallRoomLabs/B52/raw/master/images/FullControlPanel.jpg width=500 />
+
 
 ##January 30
 ### Consoleworks
