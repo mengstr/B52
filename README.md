@@ -17,6 +17,20 @@ __This is the blog and repo for my entry in the [Retrochallenge Competition](htt
 11. [Consoleworks](#Consoleworks)
 12. [Console is done](#Console-is-done)
 13. [Finalised PCB](#Finalised-PCB)
+14. [I admit defeat](#I-admit-defeat)
+
+## February 1
+### I admit defeat 
+Well, I started off in a good pace during the first few days of the January then I got a bit lazy and all of a sudden there was only a few days left of the month ;-)
+
+After a few days of panic-mode it seems like I can't get the RAM to work stable enough actually run a program from it.  I can kinda store data in it, but just sometimes, mostly I just get garbage. The MCU works fine enough by itself, I can type in immediate commands and have it execute it.
+
+So I have to admit defeat here. :-(
+
+I think I'll just patch in an Arduino (oh noes! the horror!) to the console and hack up the game in C instead just to get it running.  After that I take a another stab at getting the Z8671 board in working shape.
+
+I salute the other contestants that actually got all the way of what they set out to do at the beginning of the retrochallenge. Well done guys (and girls if any).
+
 
 ##January 31
 
